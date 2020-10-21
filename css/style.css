@@ -1,0 +1,329 @@
+/*Menu styles*/
+.menu-container {
+  position: fixed;
+  z-index: 999;
+}
+.menu-container ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+
+.categorias-desk {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #343a40;
+  align-items: center;
+  position: fixed;
+  list-style: none;
+}
+
+.categorias-menumob {
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+}
+
+/*Menu styles*/
+/*Mobile screen*/
+@media only screen and (max-width: 400px) {
+  .menu-container {
+    display: none;
+  }
+
+  .logo {
+    width: 50px;
+  }
+}
+/*Tablet screen*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .menu-container {
+    display: none;
+  }
+
+  .logo {
+    width: 70px;
+  }
+}
+/*FIN Tablet screen*/
+/*Desktop screen*/
+@media only screen and (min-width: 961px) {
+  .navbar {
+    display: none;
+  }
+
+  .menu-container {
+    background-color: #343a40;
+  }
+
+  ul {
+    height: 120px;
+  }
+
+  li a {
+    margin: 0 100px 0 100px;
+    color: white;
+  }
+
+  ul li a:hover {
+    color: white;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .logo:hover {
+    animation-duration: 2s;
+    animation-name: aparecer;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+/*FIN Desktop screen*/
+/*Footer styles*/
+.footer-content {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 300px;
+  border-top: thin solid #D6D6D6;
+}
+
+.frase-footer {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding-top: 40px;
+}
+
+.footer-1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer-1 a {
+  text-decoration: none;
+  color: black;
+  margin-right: 50px;
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 30px 0px;
+}
+
+.iconos-footer {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*Mobile screen*/
+@media only screen and (max-width: 400px) {
+  .copyright {
+    padding: 20px;
+    font-size: 10px;
+  }
+
+  .h-class {
+    font-size: 16px;
+    padding: 100px 0 20px;
+  }
+}
+/*Desktop screen*/
+@media only screen and (min-width: 961px) {
+  .copyright {
+    padding: 70px;
+    font-size: 12px;
+  }
+
+  .footer-1 a:hover {
+    color: grey;
+  }
+
+  .h-class {
+    padding: 150px 0 50px;
+  }
+}
+/*Footer styles*/
+/*HOME styles*/
+.anuncios {
+  height: 400px;
+}
+.anuncios ul {
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.anuncios1 {
+  padding-top: 70px;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+}
+
+.anuncios2 {
+  padding-top: 0;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+}
+
+.h-class {
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a:hover img {
+  opacity: 0.75;
+}
+
+.imagenesparalelas a img {
+  padding: 20px 0 20px 0;
+}
+
+.banner-2 a {
+  display: flex;
+  width: 100%;
+}
+
+.banner-2 a img {
+  width: 100%;
+}
+
+/*NOSOTROS styles*/
+.fondo-nosotros {
+  background-color: #f1f1f1;
+}
+
+.nosotros {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: justify;
+  line-height: 20x;
+  padding: 0 50px 100px;
+  font-size: 20px;
+}
+
+.img-nosotros {
+  width: 100%;
+  height: 80%;
+}
+
+/*NOSOTROS styles*/
+/*Entregas styles*/
+.barriosentrega li {
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.diasentrega {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 20px;
+}
+
+.entregas-1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.entregas-2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.imagenmenu {
+  display: flex;
+  width: 100%;
+}
+
+/*Entregas styles*/
+/*form styles*/
+.font-form {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 15px;
+}
+
+.form-box {
+  padding-bottom: 40px;
+}
+
+/*form styles*/
+/*Gustos styles*/
+.gusto1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.gusto2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/*Gustos styles*/
+/*General styles*/
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  background-color: #f1f1f1;
+}
+
+.h-class {
+  display: flex;
+  justify-content: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+}
+
+/*Mobile screen*/
+@media only screen and (max-width: 400px) {
+  .h-class {
+    font-size: 15px;
+  }
+}
+/*Tablet screen*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .h-class {
+    font-size: 19px;
+    padding: 120px 0 20px;
+  }
+}
+/*General styles*/
+
+/*# sourceMappingURL=style.css.map */

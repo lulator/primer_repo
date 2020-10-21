@@ -1,0 +1,52 @@
+/*HOME styles*/
+.anuncios {
+        height: 400px;
+        ul {
+        text-align: center;
+        font-family: $font3;
+        font-size: 25px;
+        text-transform: uppercase;
+        }
+    }
+
+@mixin anuncios ($espacio,$fuente,$tamano){
+        padding-top: $espacio;
+        text-align: center;
+        font-family: $fuente;
+        font-size: $tamano;
+}
+
+.anuncios1 {
+        @include anuncios(70px,$font1,40px);
+}
+.anuncios2 {
+        @include anuncios(0,$font2,22px);
+}
+
+.h-class {
+    display: flex;
+    justify-content: center;   
+}
+
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+a:hover img {
+    opacity: .75;
+}
+
+.imagenesparalelas a img{
+    padding: 20px 0 20px 0;
+}
+.banner-2 a{
+    display: flex;
+    width: 100%;
+}
+
+.banner-2 a img{
+    width: 100%;
+}

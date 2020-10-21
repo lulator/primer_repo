@@ -1,0 +1,29 @@
+/*Entregas styles*/
+.barriosentrega li {
+    list-style: none;
+    font-family: $font2;
+}
+
+.diasentrega {
+    font-family: $font3;
+    font-size: 20px;
+}
+
+.entregas-1 {
+    display: flex;
+    justify-content: center;
+    font-family: $font3;
+}
+
+.entregas-2 {
+    font-family: $font3;
+    display: flex;
+    justify-content: center;
+}
+
+.imagenmenu {
+    display: flex;
+    width: 100%;
+}
+
+/*Entregas styles*/

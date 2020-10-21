@@ -1,0 +1,35 @@
+/*General styles*/
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fontbody;
+    background-color: $fondocolor;
+}
+
+.h-class {
+    display: flex;
+    justify-content: center;
+    font-family: $font1;
+    font-size: 40px;
+}
+
+/*Mobile screen*/
+@media only screen and (max-width: 400px) {
+    .h-class {
+        font-size: 15px;
+    }
+}
+
+/*Tablet screen*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .h-class {
+        font-size: 19px;
+        padding: 120px 0 20px;
+    }
+}
+
+/*General styles*/
